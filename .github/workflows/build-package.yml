@@ -15,8 +15,18 @@ jobs:
         with:
           msystem: MINGW64
           update: true
-          install: git p7zip
-
+          install: >-
+            git
+            p7zip
+            mingw-w64-x86_64-qt6-base
+            mingw-w64-x86_64-qt6-tools
+            mingw-w64-x86_64-qt6-svg
+            mingw-w64-x86_64-ngtcp2
+            mingw-w64-x86_64-nghttp3
+            mingw-w64-x86_64-openssl
+            mingw-w64-x86_64-cmake
+            mingw-w64-x86_64-ninja
+      
       - uses: actions/checkout@v4
         with: 
           #ref: dev

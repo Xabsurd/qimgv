@@ -16,6 +16,7 @@ set(TS_FILES
     "es_ES.ts"
     "de_DE.ts"
     "fr_FR.ts"
+    "tr_TR.ts"
 )
 list(TRANSFORM TS_FILES PREPEND ${CMAKE_CURRENT_SOURCE_DIR}/res/translations/)
 set(QM_OUTPUT_DIR ${PROJECT_BINARY_DIR}/qimgv/translations)
